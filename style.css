@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.wrapper {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  margin: 0 auto;
+  border: 1px solid;
+}
+.bigSquare {
+  width: calc(100% / 3 * 2);
+  height: calc(100% / 3 * 2);
+  position: absolute;
+  top: calc(100% / 6);
+  left: calc(100% / 6);
+  background-color: blue;
+  z-index: 1;
+}
+.bigSquare:hover {
+  background-color: green;
+  z-index: 2;
+}
+.centralSquare {
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+  position: absolute;
+  top: calc(100% / 3);
+  left: calc(100% / 3);
+  background-color: yellow;
+  border-radius: 10%;
+  z-index: 1;
+}
+.firstCircle {
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  border: 1px;
+  border-radius: 50%;
+}
+.firstCircle:hover {
+  background-color: thistle;
+  z-index: 1;
+}
+.secondCircle {
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  border: 1px;
+  border-radius: 50%;
+}
+.secondCircle:hover {
+  background-color: teal;
+  z-index: 1;
+}
+.thirdCircle {
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: red;
+  border: 1px;
+  border-radius: 50%;
+}
+.thirdCircle:hover {
+  background-color: tomato;
+  z-index: 1;
+}
+.fourthCircle {
+  width: calc(100% / 3);
+  height: calc(100% / 3);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  border: 1px;
+  border-radius: 50%;
+}
+.fourthCircle:hover {
+  background-color: turquoise;
+  z-index: 1;
+}
